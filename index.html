@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mista Player</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Container — decoded code নিজেই সব CSS inject করবে */
+        #player-root {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- এই div টাই player থাকবে -->
+    <div id="player-root">
+        <div class="mista-embed" data-vid="dQw4w9WgXcQ"></div>
+    </div>
+
+    <!-- decoded ytm.js লোড করবে -->
+    <script src="/ytm.js"></script>
+
+</body>
+</html>
